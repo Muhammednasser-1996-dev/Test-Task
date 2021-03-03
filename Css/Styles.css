@@ -1,0 +1,419 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4e4e4e;
+    overflow: auto;
+}
+ .carousel-container{
+    width: 80% !important;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgs-list li{
+    padding-right: 10px;
+}
+ul.navbar {
+    position: absolute;
+    z-index: 9999;
+    background: #ffebcd4d;
+    font-size: 20px;
+    list-style: none;
+    bottom:0px;
+    height: 60px;
+    width: 960px;
+    left: 100px;
+    margin-bottom: 7%;
+}
+ul.navbar li a{
+    color: #722003;
+    cursor: pointer;
+    text-decoration: none;
+}
+ul.navbar li i{
+    color: #722003;
+    cursor: pointer;
+    font-size: 30px;
+}
+.next, .prev {
+    color: #722003;
+    line-height: 10px;
+    font-size: 40px;
+    border: 1px solid #722003;
+    padding: 0px 10px;
+}
+.owl-carousel .owl-item img {
+    display: block; 
+     width: auto;
+}
+
+.carousel-slide{
+    position: relative;
+}
+.outer-navigate{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-top: 5px solid #27aea9;
+    border-bottom: 5px solid #27aea9;
+    width: 100%;
+    position: absolute;
+    z-index: 2143234234;
+    bottom: -200px;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+.outer-navigate .icon{
+    color: #27aea9;
+    font-size: 30px;
+    cursor: pointer;
+}
+.outer-navigate .imgs-list{
+    list-style-type: none;  
+    transition: all .4s  ease;
+}
+.outer-navigate .imgs-list img{
+    transition: all .4s  ease;
+}
+.outer-navigate .imgs-list img:hover{
+    transform: scale(.8,.8);
+}
+
+.animateImgList{
+    bottom: 10% !important;
+    opacity: 1 !important;
+}
+
+.slide1{
+    background-image: url('../images/S01_bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  
+}
+.slide2{
+    background-image: url('../images/S02_bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+/* Slide 3 */
+.slide3{
+    background-image: url('../images/S04_bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.Ref_S3{
+    position: relative;
+    top: 80%;
+    left: 90%;
+    z-index: 124234554767;
+    cursor: pointer;
+}
+.imgS4{
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    padding: 20px;
+    top: -100%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    opacity: 0;
+    transition: all .4s ease-in;
+}
+.animateimgs4{
+    top: 0% !important;
+    opacity: 1 !important;
+}
+
+.slide3 .S4I1{
+    position: absolute;
+    top: 25%;
+    left: 43%;
+    transform: scale(0,0);
+    transition: all .2S ease-in-out;
+}
+
+.slide3 .S4I2{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: scale(0,0);
+    transition: all .2S ease-in-out;
+}
+
+.slide3 .S4I3{
+    position: absolute;
+    top: 63%;
+    left: 35%;
+    transform: scale(0,0);
+    transition: all .2S ease-in-out;
+}
+
+.animateS4I{
+    transform:  scale(1,1) !important;
+}
+/* Slide 3 */
+
+/* Slide 4 */
+.slide4{
+    background-image: url(../images/S05_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.slide4 .imgs{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 1280px;
+    justify-content: space-around;
+}
+.imgs .img1{
+    background-image: url(../images/S05_img1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 279px;
+    width: 24%;
+    position: relative;
+}
+.S5_I4{
+    position: absolute;
+    top: 51px;
+    left: 75px;
+    clip: rect(0px, 0px, 200px, 0px);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.animateS5_I4{
+    clip: rect(0px, 200px, 200px, 0px) !important;
+    opacity: 1 !important
+}
+.imgs .img2{
+    background-image: url(../images/S05_img2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 279px;
+    width: 24%;
+    position: relative;
+}
+.S5_I5{
+    position: absolute;
+    top: 91px;
+    left: 65px;
+    clip: rect(0px, 0px, 100px, 0px);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.animateS5_I5{
+    clip: rect(0px, 200px, 100px, 0px) !important;
+    opacity: 1 !important
+}
+.imgs .img3{
+    background-image: url(../images/S05_img3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 279px;
+    position: relative;
+    width: 24%;
+}
+.S5_I6{
+    position: absolute;
+    top: 72px;
+    left: 70px;
+    clip: rect(0px, 160px, 0px, 0px);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.animateS5_I6{
+    clip: rect(0px, 160px, 150px, 0px) !important;
+    opacity: 1 !important
+}
+
+.S5_I7{
+    position: absolute;
+    top: 72px;
+    left: 80px;
+    clip: rect(0px, 200px, 0px, 0px); 
+    opacity: 0;
+    transition: all .3s .6s ease-in-out;
+}
+.animateS5_I7{
+    clip: rect(0px, 200px, 150px, 0px) !important;
+    opacity: 1 !important;
+}
+
+/* Slide 4 */
+
+/* slide 5 */
+.slide5{
+    background-image: url(../images/S06_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.S5_I1{
+    position: relative;
+    bottom: 0px;
+    left: 10px;
+    clip: rect(250px, 320px, 250px, 0px);
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+.S5_I2{
+    position: relative;
+    bottom: 0px;
+    right: 250px; 
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+.animateS6I1{
+    opacity: 1 !important;
+}
+@media only screen and (max-width: 1600px) {
+    .S5_I1{
+        position: relative;
+        bottom: 28px;
+        left: 70px;
+        clip: rect(250px, 320px, 250px, 0px);
+        opacity: 0;
+        transition: all .4s ease-in-out;
+    }
+    .S5_I2{
+        position: relative;
+        bottom:28px;
+        right: 200px; 
+        opacity: 0;
+        transition: all .4s ease-in-out;
+    }
+  }
+/* slide 5 */
+
+/* Slide 6 */
+.slide6{
+    background-image: url(../images/S08_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.S6_I1{
+    position: relative;
+    top: -5px;
+    left: -60px;
+}
+.S6_I2{
+    position: relative;
+    left: 10px;
+    top: -40px;
+    opacity: 0;
+}
+.S6_I3{
+    position: relative;
+    top: 32px;
+    left: -50px;
+    opacity: 0;
+}
+.S6_I4{
+    position: relative;
+    top: 25px;
+    right: 78px;
+    opacity: 0;
+}
+@media only screen and (max-width: 1600px) {
+    .S6_I1{
+        position: relative;
+        top: 30px;
+        left: 0px;
+    }
+    .S6_I2{
+        position: relative;
+        left: 50px;
+        top: -10px;
+        opacity: 0;
+    }
+    .S6_I3{
+        position: relative;
+        top:40px;
+        left: 0px;
+        opacity: 0;
+    }
+  }
+/* Slide 6 */
+
+/* slide 7 */
+.slide7{
+    background-image: url(../images/S09_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.image_text{
+    top: 150px;
+    left: 100px;
+    width: 900px;
+    height: 600px;
+    overflow-y: scroll;
+    position: absolute;
+}
+.S6_I4{
+    position: relative;
+    top:15px;
+    right: 8px;
+    opacity: 0;
+}
+/* slide 7 */
+
+
+
+
+
+
+/* Animaions */
+.animate__animated.animate__bounceIn {
+    --animate-duration: 1.5s;
+  }
+.animate__animated .animate__fadeInRight{
+    --animate-duration: 1.5s;
+}
+.appear{
+    opacity: 1 !important;
+}
+/* Animations */
